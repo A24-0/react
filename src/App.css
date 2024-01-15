@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
-}
+/* styles.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Навигационное меню */
+.navigation-menu {
+  background-color: #333;
+  color: white;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.navigation-title {
+  font-size: 1.5rem;
+}
+
+.search-form {
+  margin-left: auto;
+  max-width: 400px;
+}
+
+.search-icon {
+  margin-left: 10px;
+}
+
+.icon-column {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 1.5rem;
+  margin-left: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Основная страница */
+.profile-form {
+  padding: 20px;
+  background-color: #f0f0f0;
+  width: 60%; /* Устанавливаем ширину 70% */
+  float: left; /* Размещаем слева */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ceo-description {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 30%; /* Устанавливаем ширину 30% */
+  float: right; /* Размещаем справа */
+}
+
+.form-title {
+  font-size: 1.5rem;
+  color: red;
+}
+
+.form-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: red;
+}
+
+/* Форма профиля */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Кнопка Update Profile */
+.update-profile-btn {
+  width: 100%;
+  background-color: red;
+  color: white;
+}
+
+/* Описание CEO */
+.ceo-description {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.ceo-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  background-image: url('./images/ceo.jpg');
+}
+
+.ceo-title {
+  font-size: 1.2rem;
+  color: grey;
+}
+
+.ceo-text {
+  color: grey;
+  margin-bottom: 10px;
+}
+
+.follow-btn {
+  border-radius: 20px; /* Задаем радиус, чтобы сделать кнопку овальной */
+  width: 100px; /* Ширина кнопки */
+  height: 40px; /* Высота кнопки */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  color: white; /* Цвет шрифта */
+  background-color: red; /* Цвет фона */
 }
